@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comments</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        #container {
+            width: 80%;
+            max-width: 800px;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        #disqus_thread {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <div id="disqus_thread"></div>
+    <div id="container">
+        <h1>Comments</h1>
+        <div id="disqus_thread"></div>
+    </div>
     <script>
         var disqus_config = function () {
             this.page.url = window.location.href;
@@ -20,9 +45,6 @@
             (d.head || d.body).appendChild(s);
         })();
     </script>
-    <noscript>Пожалуйста, включите JavaScript для просмотра <a 
-href="https://disqus.com/?ref_noscript">комментариев powered by 
-Disqus.</a></noscript>
+    <noscript>Пожалуйста, включите JavaScript для просмотра <a href="https://disqus.com/?ref_noscript">комментариев powered by Disqus.</a></noscript>
 </body>
 </html>
-
